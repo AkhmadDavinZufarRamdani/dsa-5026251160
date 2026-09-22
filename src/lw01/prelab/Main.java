@@ -13,7 +13,7 @@ public class Main {
         List<PrintJob> jobs = new ArrayList<>();
 
         Scanner scanner = new Scanner(
-            new File("src/lw01/prelab/jobs.txt")
+            Main.class.getResourceAsStream("jobs.txt")
         );
 
         while (scanner.hasNext()) {
