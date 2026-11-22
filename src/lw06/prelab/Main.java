@@ -62,8 +62,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(
                 Main.class.getResourceAsStream("treenumbers.txt"));
-
-                
         Node root = null;
 
     String numbers = sc.nextLine();
@@ -79,10 +77,10 @@ Scanner lineScanner = new Scanner(numbers);
         int target = sc.nextInt();
         System.out.print("Preorder : ");
         preorder(root);
-        System.out.println();
+ System.out.println();
         System.out.print("Inorder  : ");
         inorder(root);
-        System.out.println();
+     System.out.println();
         System.out.print("Postorder : ");
         postorder(root);
         System.out.println();
@@ -91,6 +89,16 @@ Scanner lineScanner = new Scanner(numbers);
 
 System.out.println(" Search " + target + " : " + search(root, target));
 
-        sc.close();
-    }
+    sc.close();
+    
+    
+    
+
+
+
+
+
+
+
+}
 }
